@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="paymentstyle.css" />
+  </head>
+
+  <body>
+    <div class="cod-online">
+      <label class="radio">
+        <input name="radio" type="radio" checked id="cod" onclick="cod_fcn()" />
+        <span>Cash On Delivery</span>
+      </label>
+
+      <label class="radio">
+        <input
+          name="radio"
+          type="radio"
+          id="onlinepay"
+          onclick="online_pay_fcn()"
+          unchecked
+        />
+        <span>Pay Online</span>
+      </label>
+    </div>
+
+    <div id="section4">
+      <!-- <p>Hello</p> -->
+      <div class="row">
+        <div class="col-50">
+          <h3>Payment</h3>
+
+          <label for="cname">Name on Card</label>
+          <input
+            type="text"
+            id="cname"
+            name="cardname"
+            placeholder="Enter Full Name"
+          />
+          <label for="ccnum">Credit card number</label>
+          <input
+            type="text"
+            id="ccnum"
+            name="cardnumber"
+            placeholder="1111-2222-3333-4444"
+          />
+          <label for="expmonth">Exp Month</label>
+          <input
+            type="text"
+            id="expmonth"
+            name="expmonth"
+            placeholder="September"
+          />
+          <div class="row">
+            <div class="col-50">
+              <label for="expyear">Exp Year</label>
+              <input
+                type="text"
+                id="expyear"
+                name="expyear"
+                placeholder="2018"
+              />
+            </div>
+            <div class="col-50">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="352" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="paymentscript.js"></script>
+</html>
